@@ -3,13 +3,7 @@ title: "ComputingProjectAAT"
 output: html_document
 ---
 
-```{r}
-image()
-```
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 # installing the packages in order to display and measure the size of objects in images - Tori 
 ```{python}
 python -m pip install -U pip
@@ -28,16 +22,7 @@ import cvb
 
 ```{r pressure, echo=FALSE, fig.cap="Figure 1", out.width= '100%', out.height= '100%'}
 knitr::include_graphics("IMG_5619.jpg")
-
-```
-
-```{r pressure, echo=FALSE, fig.cap="Figure 2", out.width= '100%', out.height= '100%'}
 knitr::include_graphics("IMG_5620.jpg")
-
-```
-
-```{r pressure, echo=FALSE, fig.cap="Figure 3 - The magnified picture", out.width= '100%', out.height= '100%'}
 knitr::include_graphics("IMG_5618.jpg")
 
 ```
-
