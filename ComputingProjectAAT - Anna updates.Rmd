@@ -26,3 +26,4 @@ knitr::include_graphics("IMG_5620.jpg")
 knitr::include_graphics("IMG_5618.jpg")
 
 ```
+# next step is to compare size of various worms in the pictures to their average size at a particular age - Ashley 
