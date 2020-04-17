@@ -1,0 +1,28 @@
+---
+title: "ComputingProjectAAT"
+output: html_document
+---
+
+
+# installing the packages in order to display and measure the size of objects in images - Tori 
+```{python}
+python -m pip install -U pip
+python -m pip install -U matplotlib
+
+%matplotlib inline
+from scipy.spatial import distance as dist
+from imutils import perspective 
+from imutils import contours 
+import numpy as np 
+import argparse 
+import imutils
+import cvb
+
+```
+
+```{r pressure, echo=FALSE, fig.cap="Figure 1", out.width= '100%', out.height= '100%'}
+knitr::include_graphics("IMG_5619.jpg")
+knitr::include_graphics("IMG_5620.jpg")
+knitr::include_graphics("IMG_5618.jpg")
+
+```
