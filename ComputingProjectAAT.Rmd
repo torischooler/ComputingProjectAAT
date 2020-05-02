@@ -2,20 +2,15 @@
 title: "ComputingProjectAAT"
 output: html_document
 ---
-
+#installing the packages in order to display and measure the size of objects in images. #These packages will be used to run codes that will measure the area of the C.Elegans in different pictures. These measurements will analyze the growth of different C.Elegan's groups to determine the effect of vapor administration. -Tori
 ```{r}
-image(![alt text][url])
+library(PythonInR)
+library(graphics)
+install.packages("imager")
 ```
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-# installing the packages in order to display and measure the size of objects in images - Tori 
 ```{python}
-python -m pip install -U pip
-python -m pip install -U matplotlib
 
-%matplotlib inline
 from scipy.spatial import distance as dist
 from imutils import perspective 
 from imutils import contours 
@@ -25,3 +20,24 @@ import imutils
 import cvb
 
 ```
+
+```{python}
+```{python}
+# import the necessary packages
+from scipy.spatial import distance as dist
+import numpy as np
+import matplotlib
+```
+
+#the package imageJ (by Anna) was imported and used to measure the area (in 10^-4 mm) of the C.Elegans in each photo. The data set was collected from the image analysis and imported as Worm_Size_Results
+
+#analyzing Worm_Size_Results data using an anova test-Tori
+```{r}
+C.elegansresults <- aov(C.Elegans~Area, data=Worm_Size_Results)
+summary(C.elegansresults)
+```
+#I created a simple plot of the data set.-Tori
+```{r}
+plot(C.Elegans~Area, data=Worm_Size_Results)
+```
+
