@@ -41,3 +41,12 @@ summary(C.elegansresults)
 plot(C.Elegans~Area, data=Worm_Size_Results)
 ```
 
+#I creaed a TukeyHSD test of the data - Ashley 
+```{r}
+TukeyHSD(C.elegansresults)
+```
+#this woud have been the t.test that needed to be done originally before it was decided to do an ANOVA test instead - Ashley
+```{r}
+t.test(C.elegansresults)
+```
+
