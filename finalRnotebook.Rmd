@@ -28,8 +28,6 @@ import numpy as np
 import matplotlib
 ```
 
-#Anna's Portion: Installing and Using ImageJ for Image Analysis
-
 #Tori's Portion: Running and AOV test and plot 
 #The data and areas of E.Coli measured from the ImageJ analysis was analyzed using an anova test. 
 ```{r}
@@ -40,6 +38,9 @@ summary(C.elegansresults)
 ```{r}
 plot(C.Elegans~Area, data=Worm_Size_Results)
 ```
+#Anna's Portion: Installing and Using ImageJ for Image Analysis
+#Uploaded the images into RStudio as well as ImageJ. Using ImageJ, I measured around each worm at 200% magnification for accurate tracing and, with the measuring option, was given a value for each worm that correlated to size. I put these values into an Excel sheet and averaged the size for each worm. I then uploaded the Excel into our GitHub (as well as emailed copies to Ashley and Tori) so that Ashley and Tori could do their portions of the project.
+
 
 #Ashley's Portion: Running TukeyHSD 
 
