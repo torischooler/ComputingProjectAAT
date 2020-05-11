@@ -1,0 +1,46 @@
+---
+title: 'Final R Notebook'
+output: html_notebook
+---
+Final Notebook for Anna Harmon, Ashley Huebert, and Tori Schooler's Computing Project 
+
+#Tori's Portion: Installing Packages for Image Analysis
+#research on different packages that could be installed that could analyze and measure the E.Coli of Anna Harmon's images from her capstone project. 
+#possible packages include imager with R, and scipy, numpy, opencv, matplotlib, and imutils with Python. 
+#With little success with these packages and codeblocks below, Anna installed the package ImageJ and can be seen in her portion below. 
+```{r}
+library(PythonInR)
+library(graphics)
+install.packages("imager")
+```
+
+```{python}
+from scipy.spatial import distance as dist
+from imutils import perspective 
+from imutils import contours 
+import numpy as np 
+import argparse 
+import imutils
+import cvb
+
+from scipy.spatial import distance as dist
+import numpy as np
+import matplotlib
+```
+
+#Anna's Portion: Installing and Using ImageJ for Image Analysis
+
+#Tori's Portion: Running and AOV test and plot 
+#The data and areas of E.Coli measured from the ImageJ analysis was analyzed using an anova test. 
+```{r}
+C.elegansresults <- aov(C.Elegans~Area, data=Worm_Size_Results)
+summary(C.elegansresults)
+```
+
+```{r}
+plot(C.Elegans~Area, data=Worm_Size_Results)
+```
+
+#Ashley's Portion: Running TukeyHSD 
+
+
